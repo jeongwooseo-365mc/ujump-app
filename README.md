@@ -14,7 +14,7 @@ GitHub에 푸시하면 Actions가 자동으로 빌드합니다. 워크플로 파
 
 | 결과물 | 아티팩트 → 파일 |
 |---|---|
-| Windows 설치파일 | `windows-installer` → `울주AI점프_x.y.z_x64-setup.exe` |
+| Windows 설치파일 | `windows-installer` → `UljuAIJump_x.y.z_x64-setup.exe` (설치 후 이름은 울주AI점프) |
 | 안드로이드 | `android-apk` → `ujump.apk` |
 
 - **안드로이드 APK:** 디버그 서명이라 직접 설치(사이드로드)만 됩니다. 플레이스토어에 올리려면 릴리스 키로 서명해야 합니다.

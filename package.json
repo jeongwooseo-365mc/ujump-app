@@ -1,6 +1,6 @@
 {
   "name": "ujump-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "울주AI센터 점프 앱 포장 (Windows: Tauri, Android: Capacitor). 게임 본체는 https://nee.n-e.kr/ujump/ 를 불러옴",
   "scripts": {
