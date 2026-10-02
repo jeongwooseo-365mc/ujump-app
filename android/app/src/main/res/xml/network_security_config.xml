@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  게임 서버(nee.n-e.kr)가 TLS 에서 중간 인증서를 보내지 않아서, 중간 인증서를 스스로 찾지 않는
+  안드로이드 WebView 가 인증서를 검증하지 못하고(net_error -202) 검은 화면이 되던 문제의 안전장치.
+  Let's Encrypt 의 현재 중간 인증서들을 신뢰 목록에 추가 (시스템 인증서는 그대로 사용).
+  근본 해결은 서버에 전체 체인(사이트 인증서 + 중간 인증서)을 설치하는 것.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/le_intermediates" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

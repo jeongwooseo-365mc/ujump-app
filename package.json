@@ -1,0 +1,22 @@
+{
+  "name": "ujump-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "울주AI센터 점프 앱 포장 (Windows: Tauri, Android: Capacitor). 게임 본체는 https://nee.n-e.kr/ujump/ 를 불러옴",
+  "scripts": {
+    "icons": "tauri icon icon.png && capacitor-assets generate --android --iconBackgroundColor #0a2a6b --iconBackgroundColorDark #0a2a6b --splashBackgroundColor #0a2a6b --splashBackgroundColorDark #0a2a6b",
+    "win": "tauri build",
+    "android:sync": "cap sync android",
+    "android": "cap sync android && cd android && gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0",
+    "@tauri-apps/cli": "^2.0.0"
+  }
+}

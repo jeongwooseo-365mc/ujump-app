@@ -1,0 +1,12 @@
+{
+  "appId": "kr.nee.ujump",
+  "appName": "울주AI센터 점프",
+  "webDir": "web",
+  "server": {
+    "url": "https://nee.n-e.kr/ujump/",
+    "androidScheme": "https"
+  },
+  "android": {
+    "backgroundColor": "#0a2a6b"
+  }
+}

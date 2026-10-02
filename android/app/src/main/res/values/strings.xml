@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">울주AI센터 점프</string>
+    <string name="title_activity_main">울주AI센터 점프</string>
+    <string name="package_name">kr.nee.ujump</string>
+    <string name="custom_url_scheme">kr.nee.ujump</string>
+</resources>
